@@ -21,5 +21,11 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "react-redux": "^6.0.0",
+    "react-tweet-embed": "^1.1.1",
+    "redux": "^4.0.1",
+    "redux-thunk": "^2.3.0"
+  }
 }
