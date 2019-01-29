@@ -6,13 +6,13 @@ at:
 
     public/data/tweets.csv
 
-And then:
+To run it locally in development mode:
 
     npm install
     npm start
     open http://localhost:8000
 
-If you'd like to build the viewer so you can move it up to your own website:
+If you like what you see, and want to move it up to your website:
 
     npm run build
     scp -r build me@example.org:/var/www/
