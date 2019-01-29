@@ -10,7 +10,6 @@ To run it locally in development mode:
 
     npm install
     npm start
-    open http://localhost:8000
 
 If you like what you see, and want to move it up to your website:
 
