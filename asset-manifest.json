@@ -1,13 +1,13 @@
 {
-  "main.css": "/static/css/main.16c80855.chunk.css",
-  "main.js": "/static/js/main.a3afe03f.chunk.js",
-  "main.js.map": "/static/js/main.a3afe03f.chunk.js.map",
-  "static/js/1.3f0c091d.chunk.js": "/static/js/1.3f0c091d.chunk.js",
-  "static/js/1.3f0c091d.chunk.js.map": "/static/js/1.3f0c091d.chunk.js.map",
-  "runtime~main.js": "/static/js/runtime~main.229c360f.js",
-  "runtime~main.js.map": "/static/js/runtime~main.229c360f.js.map",
-  "static/css/main.16c80855.chunk.css.map": "/static/css/main.16c80855.chunk.css.map",
-  "index.html": "/index.html",
-  "precache-manifest.cac8100eee21ea5a952c63d3041bc1be.js": "/precache-manifest.cac8100eee21ea5a952c63d3041bc1be.js",
-  "service-worker.js": "/service-worker.js"
+  "main.css": "/tweet-viewer/static/css/main.01b61095.chunk.css",
+  "main.js": "/tweet-viewer/static/js/main.a5a9877b.chunk.js",
+  "main.js.map": "/tweet-viewer/static/js/main.a5a9877b.chunk.js.map",
+  "static/js/1.681ef798.chunk.js": "/tweet-viewer/static/js/1.681ef798.chunk.js",
+  "static/js/1.681ef798.chunk.js.map": "/tweet-viewer/static/js/1.681ef798.chunk.js.map",
+  "runtime~main.js": "/tweet-viewer/static/js/runtime~main.b6cd3cf9.js",
+  "runtime~main.js.map": "/tweet-viewer/static/js/runtime~main.b6cd3cf9.js.map",
+  "static/css/main.01b61095.chunk.css.map": "/tweet-viewer/static/css/main.01b61095.chunk.css.map",
+  "index.html": "/tweet-viewer/index.html",
+  "precache-manifest.9f049cd04fe6cce263c7e73adb358e61.js": "/tweet-viewer/precache-manifest.9f049cd04fe6cce263c7e73adb358e61.js",
+  "service-worker.js": "/tweet-viewer/service-worker.js"
 }
