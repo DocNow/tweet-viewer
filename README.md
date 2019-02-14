@@ -4,7 +4,7 @@ tweet identifiers.
 You can use the canned file of tweet ids or put your file of tweet ids in place
 at:
 
-    public/data/tweets.csv
+    src/data/data.js
 
 To run it locally in development mode:
 
