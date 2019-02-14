@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types'
 import './App.css';
 import TweetEmbed from 'react-tweet-embed'
+import Metadata from './Metadata'
 
 class App extends Component {
   constructor() {
@@ -32,7 +33,6 @@ class App extends Component {
 
   componentDidMount() {
     window.addEventListener(`scroll`, this.handleScroll)
-    this.props.fetchTweetIds()
   }
 
   componentWillUnmount() {
@@ -42,19 +42,22 @@ class App extends Component {
 
   render() {
     const tweets = this.props.tweetIds
-    return (<div id="docnow__scv">{
-      tweets.slice(0, this.state.postsToShow).map((t, i) => {
-        return (<TweetEmbed
-          key={`t${i}`}
-          id={t}
-          options={{cards: 'hidden'}} />)
-      })
-    }</div>)
+    return (<div className="App">
+      <Metadata metadata={this.props.metadata}/>
+      <div>{
+        tweets.slice(0, this.state.postsToShow).map((t, i) => {
+          return (<TweetEmbed
+            key={`t${i}`}
+            id={t}
+            options={{cards: 'hidden'}} />)
+        })
+      }</div>
+    </div>)
   }
 }
 
 App.propTypes = {
-  fetchTweetIds: PropTypes.func.isRequired,
+  metadata: PropTypes.object.isRequired,
   tweetIds: PropTypes.array.isRequired
 }
 
