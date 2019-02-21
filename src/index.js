@@ -1,11 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './components/App'
-import docnowData from './data/data'
+import TweetViewer from './components/TweetViewer'
 
 ReactDOM.render(
-  <App 
-    tweetIds={docnowData.ids}
-    metadata={docnowData.metadata}/>,
+  <TweetViewer 
+    tweetIds={TWEET_VIEWER_DATA.ids}
+    metadata={TWEET_VIEWER_DATA.metadata}/>,
   document.getElementById('root'));

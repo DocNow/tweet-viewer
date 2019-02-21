@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types'
-import './App.css';
+import './TweetViewer.css';
 import TweetEmbed from 'react-tweet-embed'
 import Metadata from './Metadata'
 
-class App extends Component {
+class TweetViewer extends Component {
   constructor() {
     super()
     let postsToShow = 12
@@ -56,9 +56,9 @@ class App extends Component {
   }
 }
 
-App.propTypes = {
+TweetViewer.propTypes = {
   metadata: PropTypes.object.isRequired,
   tweetIds: PropTypes.array.isRequired
 }
 
-export default App;
+export default TweetViewer;
