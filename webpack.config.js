@@ -3,9 +3,11 @@ const path = require('path')
 
 module.exports = {
   mode: 'production',
-  entry: './src/index.js',
+  entry: {
+    "tweet-viewer": './src/index.js',
+  },
   output: {
-    filename: `TweetViewer.js`,
+    filename: `[name].js`,
     path: path.resolve(__dirname, './dist')
   },
   module: {
