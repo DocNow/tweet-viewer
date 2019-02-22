@@ -1,18 +1,18 @@
-*tweet-viewer* is a minimal React based, infinite scroll viewer for a file of
-tweet identifiers. 
+*tweet-viewer* is a React component for viewing a tweet id dataset with infinite scroll and metadata about the dataset.
 
-You can use the canned file of tweet ids or put your file of tweet ids in place
-at:
+You can use it in your React application by installing:
 
-    src/data/data.js
+    npm i tweet-viewer
 
-To run it locally in development mode:
+Then you should be able to import the component:
 
-    npm install
-    npm start
+```javascript
+import TweetViewer from 'tweet-viewer'
+```
 
-If you like what you see, and want to move it up to your website:
+And then use the component in your render function by passing in a list of
+tweet identifers and some metadata:
 
-    npm run build
-    scp -r build me@example.org:/var/www/
-
+```jsx
+<TweetViewer tweetIds={ids} metadata={metadata} />,
+```
