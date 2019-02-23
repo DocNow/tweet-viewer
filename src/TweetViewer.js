@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types'
-import './TweetViewer.css';
 import TweetEmbed from 'react-tweet-embed'
 import Metadata from './Metadata'
+import './TweetViewer.css';
 
 class TweetViewer extends Component {
   constructor() {
