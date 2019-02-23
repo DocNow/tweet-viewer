@@ -1,3 +1,5 @@
+# tweet-viewer
+
 *tweet-viewer* is a React component for viewing a tweet id dataset with infinite scroll and metadata about the dataset.
 
 You can use it in your React application by installing:
