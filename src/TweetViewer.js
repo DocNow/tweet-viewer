@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types'
 import TweetEmbed from 'react-tweet-embed'
-import Metadata from './Metadata'
 import './TweetViewer.css';
 
 class TweetViewer extends Component {
@@ -43,7 +42,6 @@ class TweetViewer extends Component {
   render() {
     const tweets = this.props.tweetIds
     return (<div className="App">
-      <Metadata metadata={this.props.metadata}/>
       <div>{
         tweets.slice(0, this.state.postsToShow).map((t, i) => {
           return (<TweetEmbed
@@ -57,7 +55,6 @@ class TweetViewer extends Component {
 }
 
 TweetViewer.propTypes = {
-  metadata: PropTypes.object.isRequired,
   tweetIds: PropTypes.array.isRequired
 }
 

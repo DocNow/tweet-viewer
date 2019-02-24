@@ -12,9 +12,9 @@ Then you should be able to import the component:
 import TweetViewer from 'tweet-viewer'
 ```
 
-And then use the component in your render function by passing in a list of
-tweet identifers and some metadata:
+And then use the component in your render function by passing in a *list* of
+tweet identifers:
 
 ```jsx
-<TweetViewer tweetIds={ids} metadata={metadata} />,
+<TweetViewer tweetIds={ids} />,
 ```
