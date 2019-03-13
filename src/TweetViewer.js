@@ -7,7 +7,7 @@ class TweetViewer extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      postsToShow: props.postsToShow || 10 
+      postsToShow: this.props.chunkSize
     }
   }
 
@@ -25,8 +25,11 @@ class TweetViewer extends Component {
       document.documentElement.offsetHeight -
       (window.scrollY + window.innerHeight)
     if (distanceToBottom < 150) {
-      this.setState({ postsToShow: this.state.postsToShow + 12 })
+      this.setState({
+        postsToShow: this.state.postsToShow + this.props.chunkSize
+      })
     }
+    console.log(this.state.postsToShow)
     this.ticking = false
   }
 
@@ -52,9 +55,14 @@ class TweetViewer extends Component {
   }
 }
 
+TweetViewer.defaultProps = {
+  tweetIds: [],
+  chunkSize: 12 
+}
+
 TweetViewer.propTypes = {
   tweetIds: PropTypes.array.isRequired,
-  postsToShow: PropTypes.number
+  chunkSize: PropTypes.number
 }
 
 export default TweetViewer
