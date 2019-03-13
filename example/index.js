@@ -1,3 +1,6 @@
+import React from 'react'
+import ReactDOM from 'react-dom'
+
 // in your project you'll import from 'tweet-viewer'
 import TweetViewer from '../src/TweetViewer.js'
 

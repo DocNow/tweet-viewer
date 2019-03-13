@@ -23,18 +23,23 @@ module.exports = {
         exclude: [
           /node_modules/
         ],
-        use: {
-          loader: "babel-loader",
-          options: {
-            presets: [
-              "@babel/preset-react",
-              "@babel/preset-env"
-            ],
-            plugins: [
-              ["@babel/plugin-proposal-class-properties", { "loose": true }]
-            ]
+        use: [
+          {
+            loader: "babel-loader",
+            options: {
+              presets: [
+                "@babel/preset-react",
+                "@babel/preset-env"
+              ],
+              plugins: [
+                ["@babel/plugin-proposal-class-properties", { "loose": true }]
+              ]
+            }
+          },
+          {
+            loader: "eslint-loader"
           }
-        },
+        ]
       },
       {
         test: /\.css$/,

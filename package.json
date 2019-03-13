@@ -1,6 +1,6 @@
 {
   "name": "tweet-viewer",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "A React component for viewing a tweet-id dataset.",
   "main": "dist/tweet-viewer.js",
   "scripts": {
@@ -27,9 +27,13 @@
     "@babel/plugin-proposal-class-properties": "^7.3.3",
     "@babel/preset-env": "^7.0.0",
     "@babel/preset-react": "^7.0.0",
+    "babel-eslint": "^10.0.1",
     "babel-loader": "^8.0.5",
     "clean-webpack-plugin": "^1.0.1",
     "css-loader": "^2.1.0",
+    "eslint": "^5.15.1",
+    "eslint-loader": "^2.1.2",
+    "eslint-plugin-react": "^7.12.4",
     "html-webpack-plugin": "^3.2.0",
     "prop-types": "^15.7.2",
     "react": "^16.8.2",

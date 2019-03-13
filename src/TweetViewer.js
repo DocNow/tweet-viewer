@@ -1,16 +1,23 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import TweetEmbed from 'react-tweet-embed'
-import './TweetViewer.css';
 
 class TweetViewer extends Component {
-  constructor() {
-    super()
-    let postsToShow = 12
 
+  constructor(props) {
+    super(props)
     this.state = {
-      postsToShow,
+      postsToShow: props.postsToShow || 10 
     }
+  }
+
+  componentDidMount() {
+    window.addEventListener(`scroll`, this.handleScroll)
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener(`scroll`, this.handleScroll)
+    window.postsToShow = this.state.postsToShow
   }
 
   update() {
@@ -30,15 +37,6 @@ class TweetViewer extends Component {
     }
   }
 
-  componentDidMount() {
-    window.addEventListener(`scroll`, this.handleScroll)
-  }
-
-  componentWillUnmount() {
-    window.removeEventListener(`scroll`, this.handleScroll)
-    window.postsToShow = this.state.postsToShow
-  }
-
   render() {
     const tweets = this.props.tweetIds
     return (<div className="App">
@@ -55,7 +53,8 @@ class TweetViewer extends Component {
 }
 
 TweetViewer.propTypes = {
-  tweetIds: PropTypes.array.isRequired
+  tweetIds: PropTypes.array.isRequired,
+  postsToShow: PropTypes.number
 }
 
-export default TweetViewer;
+export default TweetViewer
