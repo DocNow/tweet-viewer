@@ -1,6 +1,6 @@
 {
   "name": "tweet-viewer",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "A React component for viewing a tweet-id dataset.",
   "main": "dist/tweet-viewer.js",
   "scripts": {
