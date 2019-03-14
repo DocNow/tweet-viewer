@@ -1,3 +1,6 @@
 src/
 .npmignore
 .babelrc
+example
+webpack.config.js
+webpack.dev.js
