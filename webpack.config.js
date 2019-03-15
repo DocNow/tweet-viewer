@@ -12,9 +12,6 @@ module.exports = {
     library: ['TweetViewer'],
     libraryTarget: 'umd'
   },
-  externals: {
-    'react': 'react'
-  },
   module: {
     rules: [
       {

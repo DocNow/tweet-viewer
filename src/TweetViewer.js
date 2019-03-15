@@ -29,7 +29,6 @@ class TweetViewer extends Component {
         postsToShow: this.state.postsToShow + this.props.chunkSize
       })
     }
-    console.log(this.state.postsToShow)
     this.ticking = false
   }
 
